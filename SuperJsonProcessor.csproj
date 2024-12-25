@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>UjwalWatgule</Authors>
+    <Description>This package provides a set of methods designed for efficient JSON manipulation and validation. 
+ It includes functionality to:
+
+1. FlattenJson: Convert a nested JSON structure into a flat, key-value pair format. This method is particularly useful when working with deeply nested JSON objects, transforming them into a more accessible structure for easier querying or processing.
+
+2. UnFlattenJson: Revert a flattened JSON structure back to its original nested format. This method allows you to restore a previously flattened JSON object to its hierarchical representation.
+
+3. ValidateJson: Validate a JSON document against a JSON schema. This method ensures that the input JSON adheres to the specified structure and data types defined in the schema, making it essential for data integrity and validation before processing or storage.
+
+4. ProcessLargeJson: Efficiently process large JSON files by reading and processing them token by token. This memory-efficient approach enables the handling of large JSON files without consuming excessive memory, making it suitable for scenarios where JSON files are too large to fit into memory all at once.
+</Description>
+    <Title>SuperJsonProcessor</Title>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
