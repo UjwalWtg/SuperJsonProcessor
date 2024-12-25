@@ -70,7 +70,7 @@ JsonProcessor.ProcessLargeJson(filePath, processAction);
 ## Installation
 To install the package,use a package manager like
 
-Install-Package JsonUtilityPackage
+Install-Package SuperJsonProcessor
 
 ## Requirements
 .NET Core 3.1 or higher
